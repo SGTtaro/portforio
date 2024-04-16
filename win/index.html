@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="common/style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+
+<title>Retro Page</title>
+</head>
+
+<body>
+    <div id="frame">
+        <div class="main">
+            <div id="home">
+                <div class="items">
+                    <img src="img/recycle_bin_empty-4.png" @click="toggleRecycleBinIframe">  
+                    <p class="explain">Recycle Bin</p>
+                    <iframe v-if="isRecycleBinVisible" src="bin.html"></iframe>    
+                </div>
+                
+                <div class="items">
+                    <img src="img/computer_explorer_cool-0.png" @click="toggleExplorerIframe">
+                    <p class="explain">Computer</p>
+                    <iframe v-if="isExplorerVisible" src="explorer.html"></iframe>                
+                    
+                </div>
+                
+                <div class="items">
+                    <img src="img/world-2.png" @click="toggleBrouseIframe">
+                    <p class="explain">Explorer</p>
+                    <iframe v-if="isBrouseVisible" src="brouse.html"></iframe>                
+                    
+                </div>
+                
+                <div class="items">
+                    <img src="img/directory_open_file_mydocs_2k-2.png" @click="toggleAboutIframe">
+                    <p class="explain">About Taro</p>
+                    <iframe v-if="isAboutVisible" src="about.html"></iframe>                
+                    
+                </div>
+            </div>
+        </div>
+                
+        <div class="bottom">
+            <div id="app">
+                <button @click="toggleMenu">Start</button>
+                <ul :class="{ 'menu': true, 'show': isMenuOpen }">
+                    <li>This site</li>
+                    <li>Is just for self-studying </li>
+                    <li>Made by Taro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                isMenuOpen: false
+            },
+            methods: {
+                toggleMenu() {
+                    this.isMenuOpen = !this.isMenuOpen;
+                }
+            }
+        });
+
+       new Vue({
+            el: '#frame',
+            data: {
+                isRecycleBinVisible: false,
+                isExplorerVisible: false,
+                isBrouseVisible: false,
+                isAboutVisible: false
+            },
+            methods: {
+                toggleRecycleBinIframe() {
+                    this.isRecycleBinVisible = !this.isRecycleBinVisible;
+                },
+                toggleExplorerIframe() {
+                    this.isExplorerVisible = !this.isExplorerVisible;
+                },
+                toggleBrouseIframe() {
+                    this.isBrouseVisible = !this.isBrouseVisible;
+                },
+                toggleAboutIframe() {
+                    this.isAboutVisible = !this.isAboutVisible;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

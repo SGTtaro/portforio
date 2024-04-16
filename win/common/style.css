@@ -1,0 +1,111 @@
+@charset "UTF-8";
+body{
+	font-family: "VT323", monospace;
+  	font-weight: 400;
+  	font-style: normal
+}
+
+
+
+.main{
+	background-color: #008b8b;
+	width: 750px;
+	height:500px;
+}
+
+.bottom{
+	background-color: #a9a9a9;
+	width:750px;
+	display:flex;
+}
+
+.time_indicator{
+	text-align: right;
+}
+
+ul{
+	list-style: none;
+}
+
+.explain{
+	color:white;
+}
+
+#start_button{
+
+}
+
+ .menu {
+    display: none;
+    position: absolute;
+    top: 422px;
+    left:8px;
+    background-color: #a9a9a9;
+    border: 1px solid #ccc;
+    padding: 10px;
+            }
+
+.show {
+            display: block;
+        }
+        
+ 
+ #frame {
+        position: relative;
+    }
+
+    
+iframe {
+        position: absolute;
+        top: 25px;
+        left: 100px;
+        background-color: white;
+        width:600px;
+        height:450px;
+    }
+
+#pop{
+	background-color: #a9a9a9;
+	padding:0;
+	margin:0;
+	width:599px;
+	height:450px;
+}    
+    
+.pop_title{
+	background-color: blue;
+	color: white;
+	font-family: "VT323", monospace;
+  	font-weight: 400;
+  	font-style: normal
+}
+
+.pop_contents{
+	background-color: #a9a9a9;
+	color: white;
+	font-family: "VT323", monospace;
+  	font-weight: 400;
+  	font-style: normal;
+
+}
+
+
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+.items{
+	padding-top:15px;
+}
+
+
+.brouse_title{
+	padding:100px;
+}
+
+.brouse_box{
+	padding-top: 50px;
+	
+}
