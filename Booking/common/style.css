@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+
+
+
+/*loading*/
+.wrapper{
+	max-width:36rem;
+	margin:auto;
+	padding: 0 1rem;
+}
+
+#loading {
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+/*fonts*/
+.shadows-into light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 700
+*/
+.teko{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html{
+	font-size: 100%;
+}
+
+#home{
+	background-image:url(../img/back.jpg);
+}
+
+.back-img{
+	background-size:cover;
+	background-position:center top;
+}
+
+#bottom{
+	text-align:center;
+	font-family: "Teko", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size:3rem;
+}
+
+
+
+
+
+
+/*header*/
+.page-header{
+	display:flex;
+	justify-content: space-between;
+}
+.upper{
+	max-width:1108px;
+	margin: 0 auto;
+	padding:0 4%;
+}
+
+.top-name{
+	display:flex;
+	text-transform: uppercase;
+	margin-top:34px;
+}
+
+
+.page-title{
+	text-align:center;
+	color:white;
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size:8rem;
+}
+
+/*navimenu の設定*/
+header{
+  font-family: "Teko", sans-serif;
+  font-size:2.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.top-navigation{
+	display:flex;
+	text-transform: uppercase;
+	margin-top:34px;
+	list-style:none;
+	background-color:white;
+}
+
+.top-navigation li{
+	margin-left:30px;
+}
+
+/*body*/
+
+article{
+	font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#home-content{
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 400;
+	font-style: normal;
+	text-align:center;
+	margin-top: 10%;
+}
+
+.button{
+	font-size:3rem;
+	background: #ff8c00;
+	color:black;
+	border-radius:5px;
+	padding: 18px 32 px;
+}
+
+.button:hover{
+	background:white;
+	color:black;
+}
+
+.hello-size{
+	font-size:5rem;
+	font-weight: 700;
+	color:white;
+}
+
+.hello-size2{
+	font-size:3rem;
+	font-weight: 400;
+	
+}
+/*footer*/
+footer{
+	text-align:center;
+	background-color:black;
+	color:white;
+	padding: 26px 0;
+}
+
+
+
+
+/*NEWS*/
+article{
+	width:74%;
+}
+
+aside{
+	width:22%;
+}
+
+.news-contents{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:50px;
+}
+
+.post-info{
+	margin-bottom:40px;
+	
+}
+
+.post-title{
+	text-decoration:underline;
+	text-decoration-color:black;
+	
+}
+
+.post-containts{
+	font-family: "Teko", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size:2rem;
+}
+
+.post-image{
+	width:300px;
+	height:300px;
+}
+
+
+aside{
+	font-family: "Teko", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	font-size:2rem;
+}
+
+.side-title{
+	text-decoration:underline;
+	text-decoration-color:black;
+}
+
+.side-menu{
+	margin-bottom: 60px;
+	list-style: none;
+}
+
+.side-menu li{
+	border-bottom:1px;
+}
+
+
+/*ABOUT*/
+.about-image{
+	width:700px;
+	height:500px;
+}
+
+
+/*contact*/
+.center{
+	width:fit-content;
+	margin:auto;
+}
+
+/*booking*/
+.img-grid{
+	display: grid;
+	gap:26px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top:6%;
+	margin-bottom:50px;
+}
+.item{
+	position:relative;
+	overflow:hidden;
+	padding-top:60%;
+	
+}
+
+.item img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:100%;
+	height:100%;
+	object-fit:contain;
+
+}
+
+.explain {
+    background-color: rgba(0, 0, 0, 0.7); /* 背景色 */
+    color: white; /* テキスト色 */
+    padding: 10px; /* 内側の余白 */
+    position: absolute; /* 相対位置 */
+    bottom: 0; /* 下部に配置 */
+    left: 0; /* 左端に配置 */
+    width: 100%; /* 幅を親要素に合わせる */
+    box-sizing: border-box; /* 内側の余白を含めたサイズ指定 */
+    text-align:center;
+}
+
+
+th{
+	font-family: "Teko", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size:2rem;
+}
+
+
+
+/*reserve*/
+#reserve_position {
+    display: flex;
+}
+
+.reserve_img {
+    flex: 0 0 auto; /* 横幅を自動調整しない */
+    width: 200px; /* 幅を設定 */
+    height: 300px; /* 高さを設定 */
+}
+
+.reserve_inf {
+    flex: 1; /* 残りのスペースを埋める */
+    padding-left: 20px; /* 余白を設定 */
+}
