@@ -84,8 +84,8 @@ footer {
 
 /* img*/
 .main_img{
-	 width:400px;
-	 height:500px;
+	 width:4rem;
+	 height:5rem;
 	 object-fit: cover;
 }
 
